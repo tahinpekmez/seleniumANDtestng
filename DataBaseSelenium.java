@@ -10,7 +10,6 @@ import java.sql.*;
 import java.sql.SQLExcepion;
 
 
-
 public class DataBase{
     Connection conn = null;
     Statement stmt = null;
@@ -56,7 +55,7 @@ public class DataBase{
 
             // Execute a query
             try {
-                String query = "DELETE FROM you.`sadness`";
+                String query = "DELETE FROM you.`tiredness`";
                 preparedStatement = conn.prepareStatement(query);
                 preparedStatement.executeUpdate();
             } catch (SQLException ex) {
