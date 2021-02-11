@@ -7,6 +7,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import java.util.concurrent.TimeUnit;
 import java.sql.*;
+import java.sql.SQLExcepion;
 
 
 
@@ -42,7 +43,7 @@ public class DataBase{
 
             // Execute a query
             try {
-                String query = "DELETE FROM otomasyon1ticimaxdev.`sepet_urun`";
+                String query = "DELETE FROM you.`sadness`";
                 preparedStatement = conn.prepareStatement(query);
                 preparedStatement.executeUpdate();
             } catch (SQLException ex) {
