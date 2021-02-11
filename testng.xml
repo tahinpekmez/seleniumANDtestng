@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="query test suite" configfailurepolicy="continue" parallel="tests" thread-count="1">
+
+    <test name="testQuery">
+        <classes>
+            <class name="MySQL.DeleteQueries">
+                <methods>
+
+                    <include name="DeleteBasket"/>
+                    <include name="DeleteCampaign"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
